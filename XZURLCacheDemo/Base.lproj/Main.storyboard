@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,80 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFO-fB-uch">
+                                <rect key="frame" x="0.0" y="497" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.58566623259999995" green="0.84640842009999995" blue="0.91300455729999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="GET">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getBtn_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Soc-od-3xi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bg8-XU-lLS">
+                                <rect key="frame" x="0.0" y="557" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.58566623259999995" green="0.84640842009999995" blue="0.91300455729999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="POST">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="postBtn_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g20-2z-1wp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhR-LX-rRb">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.58566623263888884" green="0.84640842013888884" blue="0.91300455729166663" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9eo-S9-zi2"/>
+                                </constraints>
+                                <state key="normal" title="清除缓存">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearBtn_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JSi-0F-avg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="经纬度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOP-DT-M4v">
+                                <rect key="frame" x="161.5" y="466" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBi-rp-UyE">
+                                <rect key="frame" x="16" y="20" width="343" height="426"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oFO-fB-uch" firstAttribute="height" secondItem="bg8-XU-lLS" secondAttribute="height" id="39K-6w-IaP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NBi-rp-UyE" secondAttribute="trailing" id="6sH-a6-WOl"/>
+                            <constraint firstAttribute="trailing" secondItem="qhR-LX-rRb" secondAttribute="trailing" id="Ca1-QD-ZeW"/>
+                            <constraint firstItem="NBi-rp-UyE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KTB-FW-MlP"/>
+                            <constraint firstItem="qhR-LX-rRb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Kuy-IO-NwT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qhR-LX-rRb" secondAttribute="bottom" id="LXb-Qo-dhP"/>
+                            <constraint firstItem="bg8-XU-lLS" firstAttribute="trailing" secondItem="qhR-LX-rRb" secondAttribute="trailing" id="NQO-NS-UHn"/>
+                            <constraint firstItem="oFO-fB-uch" firstAttribute="trailing" secondItem="bg8-XU-lLS" secondAttribute="trailing" id="P30-LI-6ef"/>
+                            <constraint firstItem="bg8-XU-lLS" firstAttribute="leading" secondItem="qhR-LX-rRb" secondAttribute="leading" id="ULF-Wg-f9x"/>
+                            <constraint firstItem="qhR-LX-rRb" firstAttribute="top" secondItem="bg8-XU-lLS" secondAttribute="bottom" constant="10" id="Zyu-4O-95M"/>
+                            <constraint firstItem="cOP-DT-M4v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cGd-vb-GIG"/>
+                            <constraint firstItem="bg8-XU-lLS" firstAttribute="height" secondItem="qhR-LX-rRb" secondAttribute="height" id="cVe-oS-z5O"/>
+                            <constraint firstItem="NBi-rp-UyE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dDn-9N-Kix"/>
+                            <constraint firstItem="oFO-fB-uch" firstAttribute="top" secondItem="cOP-DT-M4v" secondAttribute="bottom" constant="10" id="dlg-xC-TBO"/>
+                            <constraint firstItem="bg8-XU-lLS" firstAttribute="top" secondItem="oFO-fB-uch" secondAttribute="bottom" constant="10" id="hwM-o9-Bqw"/>
+                            <constraint firstItem="cOP-DT-M4v" firstAttribute="top" secondItem="NBi-rp-UyE" secondAttribute="bottom" constant="20" id="rHi-xq-8mq"/>
+                            <constraint firstItem="oFO-fB-uch" firstAttribute="leading" secondItem="bg8-XU-lLS" secondAttribute="leading" id="wmS-Ce-xgx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="locationLab" destination="cOP-DT-M4v" id="8t1-41-ohv"/>
+                        <outlet property="webview" destination="NBi-rp-UyE" id="XI6-j4-2Va"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1695" y="-189"/>
         </scene>
     </scenes>
 </document>

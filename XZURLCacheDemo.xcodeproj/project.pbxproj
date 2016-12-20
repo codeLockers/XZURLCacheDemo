@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97E546B91E07B92800B1B611 /* XZAPITool.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E546B81E07B92800B1B611 /* XZAPITool.m */; };
+		97F459601E08DD42007D3A8F /* XZURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F4595F1E08DD42007D3A8F /* XZURLCache.m */; };
 		97FDB2321E07AABB001170DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FDB2311E07AABB001170DA /* main.m */; };
 		97FDB2351E07AABB001170DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FDB2341E07AABB001170DA /* AppDelegate.m */; };
 		97FDB2381E07AABB001170DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FDB2371E07AABB001170DA /* ViewController.m */; };
 		97FDB23B1E07AABB001170DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97FDB2391E07AABB001170DA /* Main.storyboard */; };
 		97FDB23D1E07AABB001170DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97FDB23C1E07AABB001170DA /* Assets.xcassets */; };
 		97FDB2401E07AABB001170DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97FDB23E1E07AABB001170DA /* LaunchScreen.storyboard */; };
+		97FDB2491E07AFA9001170DA /* XZAPIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FDB2481E07AFA9001170DA /* XZAPIHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97E546B71E07B92800B1B611 /* XZAPITool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAPITool.h; sourceTree = "<group>"; };
+		97E546B81E07B92800B1B611 /* XZAPITool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAPITool.m; sourceTree = "<group>"; };
+		97F4595E1E08DD42007D3A8F /* XZURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZURLCache.h; sourceTree = "<group>"; };
+		97F4595F1E08DD42007D3A8F /* XZURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZURLCache.m; sourceTree = "<group>"; };
 		97FDB22D1E07AABB001170DA /* XZURLCacheDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XZURLCacheDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97FDB2311E07AABB001170DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		97FDB2331E07AABB001170DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +33,8 @@
 		97FDB23C1E07AABB001170DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97FDB23F1E07AABB001170DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97FDB2411E07AABB001170DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97FDB2471E07AFA9001170DA /* XZAPIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAPIHelper.h; sourceTree = "<group>"; };
+		97FDB2481E07AFA9001170DA /* XZAPIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAPIHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,12 @@
 				97FDB2341E07AABB001170DA /* AppDelegate.m */,
 				97FDB2361E07AABB001170DA /* ViewController.h */,
 				97FDB2371E07AABB001170DA /* ViewController.m */,
+				97F4595E1E08DD42007D3A8F /* XZURLCache.h */,
+				97F4595F1E08DD42007D3A8F /* XZURLCache.m */,
+				97FDB2471E07AFA9001170DA /* XZAPIHelper.h */,
+				97FDB2481E07AFA9001170DA /* XZAPIHelper.m */,
+				97E546B71E07B92800B1B611 /* XZAPITool.h */,
+				97E546B81E07B92800B1B611 /* XZAPITool.m */,
 				97FDB2391E07AABB001170DA /* Main.storyboard */,
 				97FDB23C1E07AABB001170DA /* Assets.xcassets */,
 				97FDB23E1E07AABB001170DA /* LaunchScreen.storyboard */,
@@ -151,6 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97F459601E08DD42007D3A8F /* XZURLCache.m in Sources */,
+				97E546B91E07B92800B1B611 /* XZAPITool.m in Sources */,
+				97FDB2491E07AFA9001170DA /* XZAPIHelper.m in Sources */,
 				97FDB2381E07AABB001170DA /* ViewController.m in Sources */,
 				97FDB2351E07AABB001170DA /* AppDelegate.m in Sources */,
 				97FDB2321E07AABB001170DA /* main.m in Sources */,
@@ -275,6 +293,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4KL3S3ZYGZ;
 				INFOPLIST_FILE = XZURLCacheDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = codeLocker.XZURLCacheDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,6 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4KL3S3ZYGZ;
 				INFOPLIST_FILE = XZURLCacheDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = codeLocker.XZURLCacheDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,6 +332,7 @@
 				97FDB2461E07AABB001170DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

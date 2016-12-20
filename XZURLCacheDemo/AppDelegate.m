@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "XZURLCache.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    XZURLCache *cache = [[XZURLCache alloc] initWithMemoryCapacity:4 * 1024 * 1024 diskCapacity:30 * 1024 * 1024 diskPath:nil];
+    
+    [NSURLCache setSharedURLCache:cache];
+    
     return YES;
 }
 
